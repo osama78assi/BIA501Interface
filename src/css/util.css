@@ -4,6 +4,7 @@
 
 .applayout {
   height: calc(100% - 4rem);
+  overflow: auto;
 }
 
 #data,
