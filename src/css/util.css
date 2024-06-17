@@ -1,0 +1,88 @@
+.header-main {
+  height: 4rem;
+}
+
+.applayout {
+  height: calc(100% - 4rem);
+}
+
+#data,
+#graph,
+#result,
+#result-solve {
+  animation-name: show;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.gray {
+  filter: grayscale(1);
+}
+
+.my-btn {
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.custom-animation > :first-child {
+  animation-name: before !important;
+  animation-duration: 2s !important;
+  animation-timing-function: ease !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: infinite !important;
+  animation-direction: normal !important;
+  animation-fill-mode: none !important;
+  animation-play-state: running !important;
+}
+
+.custom-animation :last-child {
+  animation-name: after !important;
+  animation-duration: 2s !important;
+  animation-timing-function: ease !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: infinite !important;
+  animation-direction: normal !important;
+  animation-fill-mode: none !important;
+  animation-play-state: running !important;
+}
+
+@keyframes before {
+  0% {
+    width: 10px;
+    box-shadow: #5252e288 20px -10px, #5252e288 -20px 10px;
+  }
+
+  35% {
+    width: 50px;
+    box-shadow: #5252e288 0px -10px, #5252e288 0px 10px;
+  }
+  70% {
+    width: 10px;
+    box-shadow: #5252e288 -20px -10px, #5252e288 20px 10px;
+  }
+  100% {
+    box-shadow: #5252e288 20px -10px, #5252e288 -20px 10px;
+  }
+}
+
+@keyframes after {
+  0% {
+    height: 10px;
+    box-shadow: #5252e2 10px 20px, #5252e2 -10px -20px;
+  }
+
+  35% {
+    height: 50px;
+    box-shadow: #5252e2 10px 0px, #5252e2 -10px 0px;
+  }
+
+  70% {
+    height: 10px;
+    box-shadow: #5252e2 10px -20px, #5252e2 -10px 20px;
+  }
+
+  100% {
+    box-shadow: #5252e2 10px 20px, #5252e2 -10px -20px;
+  }
+}
